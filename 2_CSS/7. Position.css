@@ -1,0 +1,26 @@
+p {
+    font-size: 1.75rem;
+    margin: 1.5rem;
+    padding: 1rem;
+    border: 2px solid black;
+}
+body > p {
+    background-color: lightblue;
+}
+
+#box {
+    /*Removes the element from the normal flow of the page. Try to avoid it.*/
+    /* position: fixed;
+    top: 10px; */
+
+    position: relative;
+    
+    width: 15rem;
+    height: 10rem;
+    border: 2px solid black;
+    background-color: lightgreen;
+}
+
+#long {
+    background-color: lightyellow;
+}

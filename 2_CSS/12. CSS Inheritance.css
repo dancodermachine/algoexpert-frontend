@@ -1,0 +1,14 @@
+/* Inherited properties, if they have not been set by a stylesheet will just default to whatever the parent value is. */
+
+main {
+    color: red; /*color is inherited, that is why it is giving red to h1*/
+    border: 2px solid black; /*border is no inherited that is why it doesn't give border to h1*/ /*button does not get affected because it is being overriden by the user agent stylesheet*/
+}
+
+button {
+    /* all: unset; */
+    /* color: inherit; */
+    /*color: initial;*/ /*don't worry about the user agent stylesheet and don't worry about inheritance, just look at the actual spec for CSS.*/
+    color: unset; /*if this is an inherited value, just inherit. useful for undoing what is in the user agent stylesheet*/
+    border: revert; /*look at the stylesheet above me in the cascade*/
+}

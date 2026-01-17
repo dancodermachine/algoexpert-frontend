@@ -1,0 +1,49 @@
+/*paragraph inside a footer - all paragraphs inside the footer*/
+/* footer p {
+    color: red;
+} */
+
+/*paragraph inside a footer - paragraphs direct children inside the footer*/
+/* footer > p {
+    color: green;
+} */
+
+/*any paragraph that are sibling and that come after h2 */
+/* h2 ~ p {
+    color:red;
+} */
+
+/*any paragraph that are ADJUSENT sibling and that come after h2 */
+h2 + p {
+    color:red;
+}
+
+/*h1 and h2*/
+/* h1, h2 {
+    color: red;
+} */
+
+
+/*attribute selector*/
+/* a[href="https://algoexpert.io"] {
+    color: green;
+} */
+
+
+/*attribute selector - selects "anything with the text"*/
+/* a[href*="https://algoexpert.io"] {
+    color: green;
+} */
+
+
+/*attribute selector - selects "anything that starts with"*/
+/* a[href^="https://algoexpert.io"] {
+    color: green;
+} */
+
+
+/*attribute selector - selects "anything that ends with"*/
+/* a[href$="product"] {
+    color: green;
+} */
+

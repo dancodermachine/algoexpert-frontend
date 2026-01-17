@@ -1,0 +1,79 @@
+/*PSEUDO ELEMENT*/
+/*-----------------------------------------------------------------*/
+/*Inserts a invisible element before the beginning of the content*/
+p::before {
+    content: '-';
+}
+
+/*Inserts a invisible element after the beginning of the content*/
+p::after {
+    content: '!';
+}
+
+/* p::first-letter {
+    font-size: 2em;
+} */
+
+/* p::first-line {
+    font-size: 2em;
+} */
+
+
+/*PSEUDO CLASS*/
+/*-----------------------------------------------------------------*/
+
+/*Applies if that element is the very first child of any parent parent*/
+/* p:first-child {
+    color: purple;
+} */
+/*Applies if that element is the last child of any parent parent*/
+/* p:last-child {
+    color: darkblue;
+} */
+/*Takes parameters: number, 'even', 'odd', or function (e.g., 2n - 1)*/
+/* p:nth-child(1) {
+    color: darkblue;
+} */
+
+/*-----------------------------------------------------------------*/
+
+
+/*first on the set of siblings*/
+/* p:first-of-type {
+    color: orange;
+} */
+/*last on the set of siblings*/
+/* p:last-of-type {
+    color: darkblue;
+} */
+/*Takes parameters: number, 'even', 'odd', or function (e.g., 2n - 1)*/
+/* p:nth-of-type(1) {
+    color: darkblue;
+} */
+
+/*-----------------------------------------------------------------*/
+
+
+/*univisited links*/
+/* a:link {
+    color: red;
+} */
+/*visited links*/
+/* a:visited {
+    color: green;
+} */
+
+/*-----------------------------------------------------------------*/
+
+/*inputs that are actively used by the user (e.g., cliked or tab)*/
+/* input:focus {
+    outline: 2px solid blue;
+} */
+/*not following the requirements that we have set up*/
+/* input:invalid {
+    outline: 2px solid red;
+} */
+/*You dont want to be showing it red before they even finish typing. You want first let them finish to then check if it is valid or not. CSS rule is here -> not following the requirements that we have set once it is in not focus mode*/
+/* input:invalid:not(:focus) {
+    outline: 2px solid red;
+} */
